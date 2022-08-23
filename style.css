@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8caf0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.contenedor {
+    background: #ffff;
+    border-radius: 2px;
+    box-shadow: 19px 20px 8px -9px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 400px;
+    max-width: 100%;
+}
+.cabecera {
+    background: #676cf9;
+    color: azure;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 20px 40px;
+}
+
+#formulario {
+    padding: 40px 20px;
+    
+}
+
+.form-control {
+    display: inline-block;
+    padding-bottom: 20px;
+    font:weight 200px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 7px;
+    font:weight 200px;
+}
+
+.form-control input {
+    border: none;
+    background-color: rgb(227, 225, 225);
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 11px;
+    width: 100%;
+
+}
+
+.form-control, input:focus {
+    outline: none;
+}
+
+.form-control.ok input {
+    border: 01.px;
+    border-color: rgb(18, 239, 18);
+}
+
+.form-control.falla input {
+    border: 0.1px solid;
+    border-color: rgb(249, 108, 108);
+}
+
+#formulario button {
+    background: #676cf9;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    border-radius: 2px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.form-control p {
+    visibility: hidden;
+    position: absolute;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+
+}
+
+.form-control.falla p {
+    visibility: visible;
+    color: #e74c3c;
+}
+
